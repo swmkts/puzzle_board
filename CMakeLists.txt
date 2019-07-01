@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project(astar CXX)
+add_library(astar STATIC puzzle_board.cpp astar_8_puzzle.cpp)
+add_executable(a.out astar_main.cpp)
+target_link_libraries(a.out astar)
